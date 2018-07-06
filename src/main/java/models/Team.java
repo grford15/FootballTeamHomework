@@ -6,7 +6,7 @@ import javax.persistence.*;
 import java.util.List;
 
 @Entity
-@Table(name="players")
+@Table(name="teams")
 public class Team {
 
     private int id;
@@ -26,7 +26,7 @@ public class Team {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Table(name="id")
+    @Column(name="id")
     public int getId() {
         return id;
     }
@@ -35,7 +35,7 @@ public class Team {
         this.id = id;
     }
 
-    @Table(name="name")
+    @Column(name="name")
     public String getName() {
         return name;
     }
