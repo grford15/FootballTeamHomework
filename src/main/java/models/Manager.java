@@ -10,7 +10,7 @@ public class Manager extends ClubStaff{
     private Team team;
     private List<Player> players;
 
-    public Manager(){}
+    public Manager(String steven_gerrard, int i){}
 
     public Manager(String name, int age, Team team) {
         super(name, age);

@@ -18,10 +18,10 @@ public class Team {
 
     public Team(){}
 
-    public Team(String name, Manager manager, int points) {
+    public Team(String name, Manager manager) {
         this.name = name;
         this.manager = manager;
-        this.points = points;
+        this.points = 0;
     }
 
     @Id
@@ -74,6 +74,10 @@ public class Team {
 
     public void setCompetitions(List<Competition> competitions) {
         this.competitions = competitions;
+    }
+
+    public void addCompetitions(Competition competition){
+        this.competitions.add(competition);
     }
 
     @Column(name="points")
